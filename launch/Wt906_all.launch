@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- a union of 4 launch file -->
+<launch>
+    <include file="$(find wt931)/launch/Wt906_0.launch"/>
+    <include file="$(find wt931)/launch/Wt906_1.launch"/>   
+    <include file="$(find wt931)/launch/Wt906_2.launch"/>
+    <include file="$(find wt931)/launch/Wt906_3.launch"/>
+</launch>
