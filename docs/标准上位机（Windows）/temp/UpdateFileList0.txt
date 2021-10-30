@@ -1,0 +1,9 @@
+MiniIMU.exe,200,0,
+Wit-Upgrade-Program.exe,612,1,
+ReplaceFileGrogram.exe,2,2,
+playPic\3.jpg,2,10,https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5001-21983661460.5.7b9799ad6s6VsQ&amp;id=598203013266&amp;rn=c29fb80106dc973875bbb324079b99e6&amp;abbucket=2&amp;scene=taobao_shop
+playPic\JY901.jpg,2,10,https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-17259889791.23.7a117e21HTa92X&amp;id=43511899945
+playPic\SINRT.jpg,2,10,https://item.taobao.com/item.htm?id=553403932452
+FirmwareUpdate.dll,12,30,
+AD\12.jpg,2,40,https://robotcontrol.taobao.com
+AD\13.jpg,2,40,https://item.taobao.com/item.htm?spm=a1z10.1-c.w12075169-17261776078.1.4a563971vYK1bA&amp;id=587961204951&amp;scene=taobao_shop

@@ -1,0 +1,3 @@
+D:\Users\吴大满\上位机\标准上位机_931\temp\MiniIMU.exe,D:\Users\吴大满\上位机\标准上位机_931\MiniIMU.exe
+D:\Users\吴大满\上位机\标准上位机_931\temp\playPic\SINRT.jpg,D:\Users\吴大满\上位机\标准上位机_931\playPic\SINRT.jpg
+D:\Users\吴大满\上位机\标准上位机_931\temp\FirmwareUpdate.dll,D:\Users\吴大满\上位机\标准上位机_931\FirmwareUpdate.dll
