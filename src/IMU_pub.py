@@ -5,7 +5,8 @@ import  serial
 import math
 from sensor_msgs.msg import Imu
 from geometry_msgs.msg import Pose
- 
+from std_msgs.msg import Float32MultiArray
+
 ACCData=[0.0]*8
 GYROData=[0.0]*8
 AngleData=[0.0]*8          
@@ -76,6 +77,7 @@ def DueData(inputdata):
                 if data == (CheckSum&0xff):
                     Angle = get_angle(AngleData)
                     pub_data(a,w,Angle)
+                    
                 CheckSum=0
                 Bytenum=0
                 FrameState=0
@@ -176,6 +178,10 @@ def pub_data(a,w,angle):
     pub_imu.angular_velocity.z = w[2]
     pub_imu.orientation = RPY2Quar(angle).orientation
     pub.publish(pub_imu)
+    
+    # roll pitch yaw - output directly
+    pub_rpy_ = Float32MultiArray(data=angle)
+    pub_rpy.publish(pub_rpy_)
 
  
 if __name__=='__main__': 
@@ -191,6 +197,8 @@ if __name__=='__main__':
         
         ser = serial.Serial(port, baud, timeout=0.5)
         pub = rospy.Publisher('/imu_data_leg_'+ID, Imu, queue_size=1, latch=True)
+        pub_rpy = rospy.Publisher('/imu_rpy'+ID, Float32MultiArray, queue_size=3, latch=True)
+
         
         print(port,ID)
         print(str(ser.is_open)+'_'+ID)
