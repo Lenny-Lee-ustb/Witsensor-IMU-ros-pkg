@@ -24,6 +24,8 @@
     roslaunch wt931 Wt906_all.launch
 
 ## NOTICE
+    IMU插入之后，serialport_name一般是"/dev/ttyUSB0"，记得给这个port读写的权限（sudo chmod 777 /dev/ttyUSB0）
+    默认波特率921600，可能无法正常通信，可以调低波特率使用。
     多个IMU插入同一台电脑会存在设备号相同的情况，因此ttyUSB的编号可能会有所不同。如果需要绑定设备的别名，请Google寻找解决方法。
 
     launch文件中的参数文件并非一成不变，可以根据项目需要进行更改。
