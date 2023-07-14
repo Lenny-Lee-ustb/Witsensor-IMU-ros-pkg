@@ -148,9 +148,9 @@ def get_angle(datahex):
     return angle_x,angle_y,angle_z
 
 def RPY2Quar(angle):
-    roll = angle[0]
-    pitch = angle[1]
-    yaw = angle[2]
+    roll = math.radians(angle[0])
+    pitch = math.radians(angle[1])
+    yaw = math.radians(angle[2])
     cy=math.cos(yaw*0.5)
     sy=math.sin(yaw*0.5)
     cp=math.cos(pitch*0.5)
